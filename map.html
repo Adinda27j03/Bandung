@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
     <title>Bandung—Go | Lihat Peta</title>
 
@@ -61,6 +61,10 @@
           </a>
 
       </nav>
+
+      <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+          ☰
+      </button>
 
   </header>
 
@@ -258,7 +262,7 @@
                         <input
                             id="bufferSearch"
                             type="search"
-                            placeholder="Ketik nama destinasi...">
+                            placeholder="Ketik Nama Destinasi...">
 
                     </div>
 
@@ -276,7 +280,7 @@
                 </div>
 
                 <div class="selected-place" id="bufferSelected">
-                    Belum ada titik dipilih
+                    Belum Ada Titik Dipilih
                 </div>
 
                 <div class="field">
@@ -334,7 +338,7 @@
                     </span>
 
                     <strong>
-                        Pilih titik untuk memulai.
+                        Pilih Titik Untuk Memulai.
                     </strong>
 
                 </div>
@@ -384,7 +388,7 @@
                         <input
                             id="isoSearch"
                             type="search"
-                            placeholder="Ketik bandara / stasiun...">
+                            placeholder="Ketik Lokasi Anda Berada...">
 
                     </div>
 
@@ -403,7 +407,7 @@
                 </div>
 
                 <div class="selected-place" id="isoSelected">
-                    Belum ada titik dipilih
+                    Belum Ada Titik Dipilih
                 </div>
 
 
@@ -420,7 +424,7 @@
                             class="mode-button"
                             data-mode="walking">
 
-                            <span>♟</span>
+                            <span>🛣</span>
                             Jalan
 
                         </button>
@@ -429,7 +433,7 @@
                             class="mode-button active"
                             data-mode="cycling">
 
-                            <span>♧</span>
+                            <span>🚲</span>
                             Sepeda
 
                         </button>
@@ -438,7 +442,7 @@
                             class="mode-button"
                             data-mode="driving">
 
-                            <span>▣</span>
+                            <span>🚗</span>
                             Motor/Mobil
 
                         </button>
@@ -505,7 +509,7 @@
                     </span>
 
                     <strong>
-                        Pilih titik sumber.
+                        Pilih Titik Sumber.
                     </strong>
 
                 </div>
@@ -872,6 +876,7 @@ rel="stylesheet"
 href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
 
 <!----------------------------------------- JAVASCRIPT ----------------------------------------->
+<script src="js/script.js"></script>
 <script src="js/config.js"></script>
 <script src="js/map.js"></script>
 
