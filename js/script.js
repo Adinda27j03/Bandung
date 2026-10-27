@@ -5,14 +5,15 @@ if (menu && nav) {
   menu.addEventListener("click", () => {
     const isOpen = nav.classList.toggle("mobile-open");
     menu.setAttribute("aria-expanded", String(isOpen));
+    menu.textContent = isOpen ? "×" : "☰";
   });
 
-  // Reset mobile menu state when switching back to desktop layout.
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 1024) {
+  nav.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
       nav.classList.remove("mobile-open");
       menu.setAttribute("aria-expanded", "false");
-    }
+      menu.textContent = "☰";
+    });
   });
 }
 
@@ -22,7 +23,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     const target = document.querySelector(id);
     if (target) {
       e.preventDefault();
-      target.scrollIntoView({behavior:"smooth"});
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   });
 });
