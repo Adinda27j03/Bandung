@@ -1,15 +1,17 @@
 const menu = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".navbar");
 
-if (menu) {
+if (menu && nav) {
   menu.addEventListener("click", () => {
-    nav.classList.toggle("mobile-open");
-    const links = nav.querySelector(".nav-links");
-    const about = nav.querySelector(".nav-about");
-    if (window.innerWidth <= 760) {
-      const open = nav.classList.contains("mobile-open");
-      if (links) links.style.display = open ? "flex" : "";
-      if (about) about.style.display = open ? "block" : "";
+    const isOpen = nav.classList.toggle("mobile-open");
+    menu.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  // Reset mobile menu state when switching back to desktop layout.
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 1024) {
+      nav.classList.remove("mobile-open");
+      menu.setAttribute("aria-expanded", "false");
     }
   });
 }
