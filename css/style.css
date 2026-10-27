@@ -834,7 +834,11 @@ a{color:inherit}
 }
 
 
-@media(max-width:760px){
+/* =========================================================
+   RESPONSIVE — tablet & phone
+   One breakpoint, no stacked patches.
+   ========================================================= */
+@media (max-width: 900px) {
 
 .navbar{
   position:fixed;
