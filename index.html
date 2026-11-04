@@ -1,281 +1,251 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=1200">
-  <title>Bandung—Go | Discover Bandung</title>
-  <link rel="stylesheet" href="css/style.css?v=20261028c">
-  <link rel="stylesheet" href="css/mobile.css?v=20261028c">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f8eee6">
+
+    <title>Portfolio - Adinda Dwi Yulianto</title>
+
+    <!-- Font Navbar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
+    <!-- NAVBAR -->
+    <header class="site-header">
 
-    <a class="brand" href="#home">
-      <span>BANDUNG</span>
-    <i></i>
-    <span>GO</span>
-    </a>
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Buka menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation">
 
-    <nav class="nav-links">
-      <a href="#discover">Web Details</a>
-      <a href="#places">The Places</a>
-      <a href="#gallery">Gallery</a>
-      <a href="map.html" class="map-link">
-        Lihat Peta
-      </a>
-    </nav>
-    <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
-    ☰
-    </button>
+            <span></span>
+            <span></span>
+            <span></span>
 
-  </header>
+        </button>
 
-<main>
+        <nav class="navbar" id="primary-navigation">
 
-  <!-- PAGE MENU -->
-  <section id="home" class="menu-section">
-    <h1 class="menu-title">Bandung City Explorer</h1>
-    
-      <div class="menu-media">
-        <img
-          src="assets/img/HomePage.jpg" alt="Suasana malam Kota Bandung">
+            <a href="#home" class="nav-link active">HOME</a>
 
-        <div class="menu-overlay-title">
-          #Kota itu lagi<br>
-          Bandung selalu punya kejutan.
-        </div>
+            <a href="#about" class="nav-link">ABOUT</a>
 
-        <p class="menu-small left">
-          discover the<br>
-          unexpected
-        </p>
+            <a href="#project1" class="nav-link">PROJECT</a>
 
-        <div class="menu-action">
-          <p class="menu-small right">
-            Explore cafes, food, stays and destinations<br>
-            that make Bandung worth experiencing.
-          </p>
+            <a href="#contact1" class="nav-link">CONTACT</a>
 
-          <a href="map.html" class="menu-map-button">
-            Explore Bandung
-          </a>
-        </div>
-      </div>
+        </nav>
 
-  </section>
+    </header>
 
-  <!-- 01 MAP DETAILS-->
-  <section id="discover" class="green-section paper-texture">
 
-    <div class="green-top-photo">
-      <img src="assets/img/Page01A.jpg" alt="">
-    </div>
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
 
-    <p class="section-label">A GUIDE TO BANDUNG</p>
-
-    <h2>
-      Mark the Moment,<br>
-      Explore the City,<br>
-      Be There.
-    </h2>
-
-    <p class="green-description">
-      <strong> BANDUNG—GO </strong>adalah WebGIS interaktif yang dibuat sebagai panduan untuk menjelajahi 
-      berbagai tempat di Kota Bandung. Mulai dari cafe, coffe shop, restaurant dan tempat makan lainnya, 
-      kemudian hotel, penginapan, hingga destinasi wisata. Setiap tempat dikumpulkan dan ditampilkan  
-      berdasarkan lokasinya dalam peta interaktif. Web ini membantu pengguna menemukan tempat baru,  
-      melihat pilihan di sekitar suatu area, dan menentukan tujuan berikutnya dengan cara yang lebih visual dan 
-      sederhana.
-    </p>
-
-    <div class="green-feature">
-      <div class="oval-info">
-        <strong>05</strong>
-        <small>Place Categories</small>
-      </div>
-
-      <img src="assets/img/Page01B.png" alt="Suasana tempat di Bandung">
-
-      <div class="oval-info">
-        <strong>MAP</strong>
-        <small>interactive webgis</small>
-      </div>
-    </div>
-
-    <div class="green-location">
-      <p>LOCATION</p>
-      <h3>Bandung<br>West Java,<br>Indonesia</h3>
-    </div>
-
-    <div class="green-bottom-photo">
-      <img src="assets/img/Page01A.jpg" alt="">
-    </div>
-  </section>
+        <!---------------------------------- SLIDE 1: HOME PAGE ---------------------------------->
+        <section
+            id="home"
+            class="page background-page"
+            data-background="assets/backgrounds/HomePage.png">
+        </section>
 
 
 
-  <!-- 02 THE PLACES -->
-  <section id="places" class="lineup-section">
-
-  <div class="lineup-photo">
-    <img src="assets/img/Page02A.jpg"
-         alt="Suasana tempat di Bandung"
-         class="foto-bawah">
-
-    <img src="assets/img/Page02B.gif"
-         alt="Foto kedua"
-         class="foto-atas">
-</div>
-
-  <div class="lineup-gradient"></div>
-
-  <div class="lineup-copy">
-    <p class="section-label">
-      CAFES / COFFEE / FOOD / STAYS / DESTINATIONS
-    </p>
-
-    <p>
-      From quiet cafés and local flavours to creative spaces and hidden destinations, 
-      discover the places that make <strong>Bandung</strong> worth exploring. Find a new favourite, 
-      pick your next stop, and see where the city takes you.
-    </p>
-  </div>
-
-  </section>
-
-
-
-  <!-- 03 GALLERY -->
-  <section id="gallery" class="gallery-section">
-
-    <div class="gallery-header">
-      <p class="section-label">BANDUNG / IN FRAME</p>
-      <h2>
-        See the<br>
-        City.
-      </h2>
-    </div>
-
-    <div class="gallery-grid">
-      <!-- FOTO 01 BESAR KIRI -->
-      <div class="gallery-item gallery-main">
-        <img
-          src="assets/img/Page03A.jpeg"
-          alt="Bandung night"
+        <!-----------------------------------  SLIDE 2: ABOUT ------------------------------------>
+        <section
+            id="about"
+            class="page background-page"
+            data-background="assets/backgrounds/About.png"
         >
-      </div>
 
-      <!-- FOTO 02 POTRAIT TENGAH -->
-      <div class="gallery-item gallery-portrait">
-        <img
-          src="assets/img/Page03B.jpeg"
-          alt="Bandung cafe"
-        >
-      </div>
+            <div class="about-container">
 
-      <!-- FOTO 03 KECIL KANAN ATAS -->
-      <div class="gallery-item gallery-small-one">
-        <img
-          src="assets/img/Page03C.jpeg"
-          alt="Bandung street"
-        >
-      </div>
+                <!-- BAGIAN KIRI: FOTO CAROUSEL -->
+                <div class="about-carousel">
 
-      <!-- FOTO 04 KECIL KANAN BAWAH -->
-      <div class="gallery-item gallery-small-two">
-        <img
-          src="assets/img/Page03D.jpeg"
-          alt="Bandung city"
-        >
-      </div>
+                    <div class="about-photo">
+                        <img
+                            id="aboutSlide"
+                            src="assets/dokumentasi/Foto1.png"
+                            alt="Dokumentasi kegiatan">
+                    </div>
 
-      <!-- FOTO 05 LANDSCAPE BAWAH -->
-      <div class="gallery-item gallery-landscape">
-        <img
-          src="assets/img/Page03E.png"
-          alt="Bandung destination"
-        >
-      </div>
+                    <div class="about-controls">
 
-      <!-- MAKNA WEB -->
-      <div class="gallery-purpose">
-        <p>
-          Bandung bukan hanya tentang tempat yang dikunjungi, tetapi juga tentang
-          momen yang tercipta di dalamnya. Dari menemukan sudut baru hingga
-          berhenti sejenak menikmati suasana, web ini dibuat untuk membantu
-          menjadikan setiap perjalanan di Bandung lebih mudah ditemukan,
-          dinikmati, dan diingat.
-        </p>
-      </div>
-    </div>
-  </section>
+                        <button
+                            type="button"
+                            id="aboutPrev"
+                            class="about-arrow"
+                            aria-label="Foto sebelumnya">
+                            &#10094;
+                        </button>
+
+                        <span id="aboutCounter">1 / 4</span>
+
+                        <button
+                            type="button"
+                            id="aboutNext"
+                            class="about-arrow"
+                            aria-label="Foto berikutnya">
+                            &#10095;
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- BAGIAN KANAN: TEKS ABOUT -->
+                <div class="about-content">
+
+                    <!-- JUDUL -->
+                    <div class="about-heading">
+
+                        <h1>HELLO</h1> 
+                        <h1>I'M ADINDA DWI YULIANTO</h1>
+                    
+                    </div>
+
+                    <!-- DESKRIPSI -->
+                    <div class="about-description">
+                        <p class="about-intro">
+                            Saya merupakan lulusan Universitas Pendidikan Indonesia dengan 
+                            gelar Sarjana Terapan Geografis dari program studi Survei Pemetaan 
+                            dan Informasi Geografis. Berbekal kemampuan dalam pengolahan dan 
+                            analisis data geospasial, saya terbiasa menggunakan berbagai 
+                            perangkat lunak seperti ArcGIS, QGIS, ENVI, dan Global Mapper untuk 
+                            mendukung kegiatan pemetaan, digitasi, serta analisis spasial.
+                        </p>
+
+                        <div class="about-interest">
+                            <span class="about-label">AREAS OF INTEREST</span>
+
+                            <p>
+                                Saya memiliki ketertarikan pada Pengembangan Web,
+                                Sistem Informasi Geografis (SIG), Penginderaan Jauh,
+                                Survei Terestris, serta Desain Kreatif dan Pengolahan
+                                Visual Digital.
+                            </p>
+
+                        </div>
+
+                        <p>
+                            Bagi saya, proses belajar merupakan kesempatan untuk
+                            terus berkembang. Saya senang mengeksplorasi teknologi
+                            baru, meningkatkan keterampilan, dan berkolaborasi
+                            dengan orang lain dalam menciptakan pengalaman serta
+                            solusi yang bermanfaat. Saat ini, saya terbuka untuk 
+                            kesempatan kerja, kolaborasi proyek, maupun diskusi seputar GIS,
+                            pemetaan, dan pengembangan teknologi geospasial.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
-  <!-- 04 MAP -->
-  <section class="map-cta-section">
-    <p class="section-label">INTERACTIVE WEBGIS</p>
-    <h2>Find your<br>next place.</h2>
-    <p>
-      One map. Five categories. A city waiting to be explored.
-    </p>
+        <!--------------------------------  SLIDE 3: ABOUT BOTTOM -------------------------------->
+        <section
+            id="about-bottom"
+            class="page background-page"
+            data-background="assets/backgrounds/AboutBottom.png">
 
-    <p> 
-      Temukan <strong>Hotel dan Penginapan</strong>, <strong>Transportasi</strong> terdekat, 
-      destinasi <strong>Pariwisata</strong> yang menarik, <strong>Cafe dan Coffee Shop</strong> 
-      serta <strong>Kuliner</strong> di Kota Bandung
-    </p>
-    
-    <a href="map.html" class="cream-button">LIHAT PETA</a>
-  </section>
+            <div class="about-bottom-content">
+
+                <!-- GARIS PEMISAH -->
+                <div class="linkedin-divider">
+                    <span></span>
+                    <strong>✦</strong>
+                    <span></span>
+                </div>
+
+                <!-- LINKEDIN -->
+                <a
+                    href="https://www.linkedin.com/in/adinda-dwi-yulianto-27j03/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="about-linkedin">
+
+                    <span class="linkedin-icon">in</span>
+
+                    <span class="linkedin-text">
+                        <strong>Let's Conect</strong>
+
+                        <small>
+                            Untuk mengetahui lebih lanjut mengenai pengalaman, keterampilan, 
+                            sertifikasi, serta berbagai pengalaman yang pernah saya kerjakan, 
+                            silakan kunjungi profil LinkedIn saya.
+                        </small>
+                    </span>
+
+                    <span class="linkedin-arrow">↗</span>
+                </a>
+            </div>
+        </section>
 
 
-  
-  <!-- FOOTER -->
-  <section id="about" class="footer-section">
 
-    <div class="footer-content">
+        <!-- SLIDE 4: PROJECT 1 -->
+        <section
+            id="project1"
+            class="page background-page"
+            data-background="assets/backgrounds/Project1.png">
+        </section>
 
-      <div class="footer-title">
-        <h2>Bandung<br>is waiting.</h2>
-      </div>
 
-      <!-- SOCIAL MEDIA -->
-      <div class="footer-social">
+        <!-- SLIDE 5: PROJECT 2 -->
+        <section
+            id="project2"
+            class="page background-page"
+            data-background="assets/backgrounds/Project2.png">
+        </section>
 
-        <a href="https://www.instagram.com/advl06/" target="_blank" aria-label="Instagram">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
 
-        <a href="www.linkedin.com/in/adinda-dwi-yulianto-27j03" target="_blank" aria-label="LinkedIn">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
+        <!-- SLIDE 6: CONTACT 1 -->
+        <section
+            id="contact1"
+            class="page background-page"
+            data-background="assets/backgrounds/Contact.png">
+        </section>
 
-        <a href="mailto:adindady27@gmail.com" aria-label="Email">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
 
-        <a href="https://wa.me/6281221543368" target="_blank" aria-label="WhatsApp">
-          <i class="fa-brands fa-whatsapp"></i>
-        </a>
+        <!-- SLIDE 7: CONTACT 2 -->
+        <section
+            id="contact2"
+            class="page background-page final-page"
+            data-background="assets/backgrounds/Contact2.png">
 
-      </div>
-    </div>
+            <footer class="site-footer">
 
-    <footer>
-      <span>Bandung—Go</span>
-      <span>WEBGIS Portfolio Project • 2026</span>
-      <span>By Adinda Dwi Yulianto</span>
-    </footer>
+                <div class="footer-left">
+                    © 2026 PORTFOLIO ADINDA DWI YULIANTO
+                </div>
 
-  </section>
+                <a href="#home" class="footer-link">
+                    BACK TO MENU
+                </a>
 
-</main>
+            </footer>
 
-<script src="js/script.js"></script>
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js" defer></script>
+
 </body>
 </html>
